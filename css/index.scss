@@ -379,12 +379,14 @@ main{
 
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
             padding: 10px;
             font-size: 20px;
             color: white;
-            h4{transition: all  1s;}
+            h4{
+               transition: all  1s;
+            }
             a{display: none;transition: all ease-in-out 1s;}
          }
          &:hover{
@@ -404,6 +406,8 @@ main{
                   text-decoration: none;
                   color: white;
                   padding-top: 10px;
+                  position: absolute;
+                  padding-top: 50px;
                }
             }
          }

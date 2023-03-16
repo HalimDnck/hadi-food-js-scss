@@ -1,9 +1,11 @@
 //Section-a 
-const sectionA = document.querySelector('.section-a');
 
 const leftContent = document.querySelector('.srv1');
 const midContent = document.querySelector('.srv2');
 const rightContent = document.querySelector('.srv3');
+const allContent = document.querySelector('.top-service');
+const allContent2 = document.querySelector('.main-service');
+
 
 const serviceHeader = document.querySelector('.srv-header');
 const serviceText = document.querySelector('.srv-text');
@@ -12,9 +14,15 @@ const imageContent1 = document.querySelector('.img-1');
 const imageContent2 = document.querySelector('.img-2');
 
 //Change text content on hover
-sectionA.onmouseover = function(){
-   imageContent1.style.opacity = "0.3";
-   imageContent2.style.opacity = "0.3";
+window.onmouseover = function(hover){
+   if(hover.target ==  allContent){
+      imageContent1.style.opacity = "0.3";
+      imageContent2.style.opacity = "0.3";
+   }
+   else if(hover.target ==  allContent2){
+      imageContent1.style.opacity = "0.3";
+      imageContent2.style.opacity = "0.3";
+   }
 }
 
 leftContent.onmouseover = function(){

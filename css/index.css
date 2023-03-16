@@ -337,7 +337,7 @@ main .left-main .main-buttons .services:hover {
   transition: all ease-in-out 1s;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   font-size: 20px;
@@ -366,4 +366,6 @@ main .left-main .main-buttons .services:hover {
   text-decoration: none;
   color: white;
   padding-top: 10px;
+  position: absolute;
+  padding-top: 50px;
 }/*# sourceMappingURL=index.css.map */
