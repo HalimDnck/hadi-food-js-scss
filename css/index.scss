@@ -107,7 +107,7 @@ header{
 
 main{
    width: 100%;
-   height: 80vh;
+   height: 85vh;
 
    background-image: linear-gradient(to right,rgb(0, 0, 0.8),rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),url("/images/main-bg.jpg");
    background-position: center;
@@ -186,7 +186,7 @@ main{
 
 .section-a{
    width: 100%;
-   height: 80vh;
+   height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -367,15 +367,18 @@ main{
          background-image: url("/images/product.jpg");
          background-position: center;
          background-size: cover;
+         border-radius: 5px;
+         box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 8px;
 
          display: flex;
          flex-direction: column;
          justify-content: flex-end;
+         transition: all 1s;
 
          .product-name{
             background-color: $main-green;
             height: 50px;
-            transition: all ease-in-out 1s;
+            transition: all  1s;
 
             display: flex;
             flex-direction: column;
@@ -390,6 +393,8 @@ main{
             a{display: none;transition: all ease-in-out 1s;}
          }
          &:hover{
+            transition: all 1s;
+            box-shadow: rgba(16, 69, 1, 0.86) 0px 22px 70px 4px;
             .product-name{
                background-color: $main-green;
                height: 30%;
@@ -413,5 +418,135 @@ main{
          }
 
       }
+   }
+}
+
+.section-c{
+   width: 100%;
+   height: 120vh;
+   padding: 0 250px;
+   padding-top: 10%;
+   
+   .offer-top{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: $main-green;
+      font-size: 24px;
+      hr{
+         width: 30px;
+         height: 3px;
+         background: $main-green;
+      }
+   }
+
+   .offer-container{
+
+      .offer{
+         height: 300px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         
+         h5{
+            width: 30%;
+            font-size: 34px;
+            color: $main-green;
+
+         }
+         p{
+            width: 50%;
+         }
+         img{
+            width: 100px;
+            opacity: .8;
+         }
+      }
+   }
+
+}
+
+.section-d{
+   width: 100%;
+   height: 100vh;
+   padding: 100px 200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 150px;
+
+   .partners-top{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: $main-green;
+      font-size: 24px;
+      hr{
+         width: 30px;
+         height: 3px;
+         background: $main-green;
+      }
+   }
+
+   .partners-container{
+      
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      
+      .nlk-logo{
+         width: 250px;
+      }
+      div{
+         @include flexBox;
+         width: 25%;
+         height: 50%;
+         img{
+            width: 130px;
+            transition: all 1s;
+         }
+         
+         a{
+            position: absolute;
+            opacity: 0;
+            text-decoration: none;
+            color: $main-green;
+            font-size: 24px;
+            font-weight: 900;
+            transition: all 1s;
+         }
+         &:hover{
+            img{
+               opacity: 0.1;
+            }
+            a{
+               opacity: 1;
+            }
+         }
+      }
+      .partners-top{  
+         border-left: 1px solid black;
+         border-bottom: 1px solid black; 
+         border-right: 1px solid black; 
+      }
+      .partners-top2{  
+         border-bottom: 1px solid black; 
+         border-right: 1px solid black; 
+      }
+      .partners-bot{  
+         border-left: 1px solid black; 
+         border-right: 1px solid black; 
+      }
+      .partners-bot2{  
+         border-right: 1px solid black; 
+      }
+      .partners-botcorner{  
+         border-top: 1px solid black; 
+      }
+      
    }
 }

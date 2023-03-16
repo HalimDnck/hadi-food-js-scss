@@ -90,7 +90,7 @@ header .header-down .header-nav .header-links a:hover, header .header-down .head
 
 main {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   background-image: linear-gradient(to right, rgb(0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("/images/main-bg.jpg");
   background-position: center;
   background-size: cover;
@@ -165,7 +165,7 @@ main .left-main .main-buttons .services:hover {
 
 .section-a {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -327,14 +327,17 @@ main .left-main .main-buttons .services:hover {
   background-image: url("/images/product.jpg");
   background-position: center;
   background-size: cover;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  transition: all 1s;
 }
 .section-b .product-container .product .product-name {
   background-color: #4B8673;
   height: 50px;
-  transition: all ease-in-out 1s;
+  transition: all 1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -349,6 +352,10 @@ main .left-main .main-buttons .services:hover {
 .section-b .product-container .product .product-name a {
   display: none;
   transition: all ease-in-out 1s;
+}
+.section-b .product-container .product:hover {
+  transition: all 1s;
+  box-shadow: rgba(16, 69, 1, 0.86) 0px 22px 70px 4px;
 }
 .section-b .product-container .product:hover .product-name {
   background-color: #4B8673;
@@ -368,4 +375,120 @@ main .left-main .main-buttons .services:hover {
   padding-top: 10px;
   position: absolute;
   padding-top: 50px;
+}
+
+.section-c {
+  width: 100%;
+  height: 120vh;
+  padding: 0 250px;
+  padding-top: 10%;
+}
+.section-c .offer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #4B8673;
+  font-size: 24px;
+}
+.section-c .offer-top hr {
+  width: 30px;
+  height: 3px;
+  background: #4B8673;
+}
+.section-c .offer-container .offer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-c .offer-container .offer h5 {
+  width: 30%;
+  font-size: 34px;
+  color: #4B8673;
+}
+.section-c .offer-container .offer p {
+  width: 50%;
+}
+.section-c .offer-container .offer img {
+  width: 100px;
+  opacity: 0.8;
+}
+
+.section-d {
+  width: 100%;
+  height: 100vh;
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 150px;
+}
+.section-d .partners-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #4B8673;
+  font-size: 24px;
+}
+.section-d .partners-top hr {
+  width: 30px;
+  height: 3px;
+  background: #4B8673;
+}
+.section-d .partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.section-d .partners-container .nlk-logo {
+  width: 250px;
+}
+.section-d .partners-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 50%;
+}
+.section-d .partners-container div img {
+  width: 130px;
+  transition: all 1s;
+}
+.section-d .partners-container div a {
+  position: absolute;
+  opacity: 0;
+  text-decoration: none;
+  color: #4B8673;
+  font-size: 24px;
+  font-weight: 900;
+  transition: all 1s;
+}
+.section-d .partners-container div:hover img {
+  opacity: 0.1;
+}
+.section-d .partners-container div:hover a {
+  opacity: 1;
+}
+.section-d .partners-container .partners-top {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.section-d .partners-container .partners-top2 {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.section-d .partners-container .partners-bot {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.section-d .partners-container .partners-bot2 {
+  border-right: 1px solid black;
+}
+.section-d .partners-container .partners-botcorner {
+  border-top: 1px solid black;
 }/*# sourceMappingURL=index.css.map */
