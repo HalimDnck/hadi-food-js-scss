@@ -1,3 +1,4 @@
+/*Products*/
 const fruitButton = document.getElementById('fruit-button');
 const vegiButton = document.getElementById('vegi-button');
 const healtButton = document.getElementById('healt-button');
@@ -84,3 +85,8 @@ allButton.addEventListener('click', function(){
       product.style.display="flex";
    })
 })
+
+/*Services*/
+function scrollWin(x, y) {
+   window.scrollBy(x, y);
+}

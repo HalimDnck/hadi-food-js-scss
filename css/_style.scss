@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 $opensans: 'Open Sans', sans-serif;
 
+@font-face {
+      font-family: logoFont;
+      src: url("/font/logo-font.ttf");
+}
+
 $white-bg: #F6FBF4;
 $yellow: #F5DF99;
 $main-green: #4B8673;

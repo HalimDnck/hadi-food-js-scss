@@ -119,117 +119,148 @@ header .header-down .header-nav .header-links a:hover, header .header-down .head
 
 main {
   width: 100%;
-  height: 200vh;
-  display: flex;
-  flex-direction: column;
+  min-height: 200vh;
 }
-main .product-head {
+main .service-head {
   width: 100%;
-  height: 20vh;
-  background-image: linear-gradient(to right, rgb(0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/images/products/main-bg.jpg");
-  background-size: cover;
+  height: 85vh;
+  display: flex;
+}
+main .service-head .head {
+  width: 50%;
+  height: 70vh;
+  background-color: #4B8673;
+}
+main .service-head .wave {
+  width: 100%;
+  position: absolute;
+  align-self: flex-end;
+}
+main .service-head .right-head {
+  background-image: url("/images/services/background.png");
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .service-head .left-head {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
-main .product-head h1 {
-  font-size: 64px;
+main .service-head .left-head img {
+  width: 100px;
+}
+main .service-head .left-head h1 {
+  padding-top: 20px;
   color: white;
-  font-weight: 100;
 }
-main .products-top {
-  padding-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
+main .service-head .left-head p {
+  padding-top: 20px;
+  width: 90%;
+  color: #F5DF99;
 }
-main .products-top hr {
-  width: 10px;
-  border: 1px solid black;
-}
-main .products-top button {
-  width: -moz-fit-content;
-  width: fit-content;
+main .service-head .left-head button {
+  margin-top: 50px;
+  width: 250px;
   height: 50px;
-  border: none;
-  background: local;
+  font-size: 20px;
+  font-weight: 400;
   cursor: pointer;
-  font-size: 18px;
-  transition: all 0.5s;
+  transition: all 1s;
+  background-color: #4B8673;
+  color: white;
+  border: 1px solid white;
 }
-main .products-top button:hover {
-  color: #00BB7F;
+main .service-head .left-head button:hover {
+  font-size: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.638);
 }
-main .products-main {
-  padding-top: 100px;
-  align-self: center;
-  justify-self: center;
+main .service-container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding-top: 10vh;
+}
+main .service-container h2 strong {
+  font-family: logoFont;
+  color: #4B8673;
+}
+main .service-container p {
+  padding: 10px 20%;
+}
+main .service-container p strong {
+  font-family: logoFont;
+  color: #4B8673;
+}
+main .service-container .services {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   justify-content: space-evenly;
-  align-items: flex-start;
-  width: 70%;
-  height: 100vh;
-  gap: 50px;
+  align-items: center;
+  padding: 50px 20%;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  row-gap: 150px;
+  text-align: center;
 }
-main .products-main .product {
-  flex: 0 0 21%;
+main .service-container .services .service {
+  flex: 1 1 26%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .service-container .services .service .cards {
   width: 300px;
-  height: 350px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 8px;
+  height: 300px;
+  background-color: rgba(75, 134, 115, 0.4117647059);
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  border-radius: 30px;
+  padding-top: 20px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   transition: all 1s;
 }
-main .products-main .product .product-name {
-  background-color: #4B8673;
-  height: 30px;
-  transition: all 1s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  font-size: 20px;
-  color: white;
-}
-main .products-main .product .product-name h4 {
-  transition: all 1s;
-}
-main .products-main .product .product-name a {
-  position: absolute;
-  transition: all ease-in-out 2s;
+main .service-container .services .service .cards p {
+  padding: 50px 10px;
   opacity: 0;
-}
-main .products-main .product:hover {
   transition: all 1s;
-  box-shadow: rgba(16, 69, 1, 0.86) 0px 22px 70px 4px;
+  color: black;
+  font-weight: 600;
 }
-main .products-main .product:hover .product-name {
-  background-color: #4B8673;
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  font-size: 20px;
-  color: white;
-}
-main .products-main .product:hover .product-name a {
-  display: flex;
-  font-size: 14px;
-  text-decoration: none;
-  color: white;
-  padding-top: 10px;
+main .service-container .services .service .cards img {
+  width: 150px;
   position: absolute;
-  padding-top: 50px;
+  align-self: center;
+  padding-top: 100px;
+  transition: all 1s;
   opacity: 1;
+}
+main .service-container .services .service .cards h3 {
+  padding: 0 10%;
+  transition: all 1s;
+}
+main .service-container .services .service .cards:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+main .service-container .services .service .cards:hover p {
+  opacity: 1;
+  text-align: center;
+  justify-self: center;
+}
+main .service-container .services .service .cards:hover img {
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 50px;
+  opacity: 0.2;
+}
+main .service-container .services .service .cards:hover h3 {
+  font-size: 22px;
 }
 
 footer {
@@ -369,4 +400,4 @@ footer .bottom-footer {
 }
 footer .bottom-footer a {
   color: white;
-}/*# sourceMappingURL=product.css.map */
+}/*# sourceMappingURL=service.css.map */
