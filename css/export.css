@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@font-face {
+  font-family: logoFont;
+  src: url("/font/logo-font.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #F6FBF4;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+}
+header .header-top {
+  width: 100%;
+  height: 60%;
+  padding: 2% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-top .header-logo img {
+  width: 100px;
+  height: auto;
+}
+header .header-top .search-container .search {
+  width: 300px;
+  position: relative;
+}
+header .header-top .search-container .search input {
+  width: 100%;
+  outline: none;
+  height: 30px;
+  font-size: 18px;
+  border: 1px solid #4B8673;
+}
+header .header-top .search-container .search button {
+  position: absolute;
+  z-index: 2;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #4B8673;
+  border: none;
+  font-size: 18px;
+  right: 1px;
+  color: white;
+  transition: all 1s;
+}
+header .header-top .search-container .search button:hover {
+  font-size: 26px;
+}
+header .header-top .header-social .social-media {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  font-size: 24px;
+}
+header .header-top .header-social .social-media a {
+  color: #4B8673;
+}
+header hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+header .header-down {
+  width: 100%;
+  height: 40%;
+  padding-top: 10px;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-down .header-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-down .header-nav .header-links {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  align-self: center;
+  list-style: none;
+}
+header .header-down .header-nav .header-links a {
+  color: inherit;
+  text-underline-offset: var(--offset, 0.1em);
+  -webkit-text-decoration: underline 0.09em;
+          text-decoration: underline 0.09em;
+  transition: --offset 1000ms, text-decoration-color 1000ms;
+  transition: all 1s;
+}
+header .header-down .header-nav .header-links a:hover, header .header-down .header-nav .header-links a:focus {
+  font-size: 24px;
+  --offset: 0.4em;
+  text-decoration-color: #4B8673;
+  color: #4B8673;
+  -webkit-text-decoration: underline 0.2em;
+          text-decoration: underline 0.2em;
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  background: #4B8673;
+}
+footer .top-footer {
+  display: flex;
+  padding: 0px 100px;
+  height: 90%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .top-footer .left-footer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+footer .top-footer .left-footer img {
+  width: 200px;
+}
+footer .top-footer .left-footer p {
+  font-size: 18px;
+  color: white;
+}
+footer .top-footer .left-footer .footer-social ul {
+  display: flex;
+  list-style: none;
+  font-size: 36px;
+  gap: 25px;
+}
+footer .top-footer .left-footer .footer-social ul a {
+  color: white;
+}
+footer .top-footer .mid-footer {
+  margin-right: 60px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+footer .top-footer .mid-footer ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .top-footer .mid-footer ul a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  transition: all 1s;
+  font-weight: bold;
+  width: 0%;
+  border-bottom: solid #d6d6d6 2.5px;
+  display: inline-block;
+  font-weight: 300;
+}
+footer .top-footer .mid-footer ul a:hover {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+}
+footer .top-footer .right-footer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 18px;
+  gap: 20px;
+}
+footer .top-footer .right-footer .address {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+footer .top-footer .right-footer a {
+  color: white;
+  text-decoration: none;
+}
+footer .top-footer .right-footer a i {
+  font-size: 30px;
+  opacity: 0;
+  transition: all 1s;
+}
+footer .top-footer .right-footer a:hover i {
+  opacity: 1;
+}
+footer .top-footer .right-footer .email-button {
+  width: 300px;
+  position: relative;
+}
+footer .top-footer .right-footer .email-button input {
+  width: 100%;
+  outline: none;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+}
+footer .top-footer .right-footer .email-button button {
+  position: absolute;
+  z-index: 2;
+  border: none;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  background-color: #F5DF99;
+  font-size: 20px;
+  color: black;
+  transition: all 1s;
+}
+footer .top-footer .right-footer .email-button button:hover {
+  font-size: 30px;
+}
+footer hr {
+  height: 0px;
+  opacity: 0.4;
+}
+footer .bottom-footer {
+  padding: 0 15px;
+  height: 30px;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+footer .bottom-footer a {
+  color: white;
+}/*# sourceMappingURL=export.css.map */
