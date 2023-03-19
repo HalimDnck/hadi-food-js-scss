@@ -3,6 +3,24 @@
   font-family: logoFont;
   src: url("/font/logo-font.ttf");
 }
+.lang-btn {
+  z-index: 10;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #00BB7F;
+  color: #FFF;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #f5f5f5;
+}
+.lang-btn i {
+  font-size: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;

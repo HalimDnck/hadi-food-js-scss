@@ -9,6 +9,12 @@
    <link rel="stylesheet" href="/css/export.css">
 </head>
 <body>
+
+   <button class="lang-btn">
+      <i class="fa-solid fa-globe"></i>
+   </button>
+
+
    <header>
       <div class="header-top">
          <div class="header-logo">
@@ -62,18 +68,27 @@
    </header>
 
    <main>
-      <div class="container">
+      <div class="container" id="en">
          <h1>IMPORT & EXPORT</h1>
          <p>We are a global supplier of premium dry fruits and vegetables</p>
          <button onclick="scrollWin(0,1050)">Read More <br> <i class="fa-solid fa-angle-down"></i></button>
+      </div>
+      <div class="container" id="tr">
+         <h1>İTHALAT & İHRACAT</h1>
+         <p>Birinci sınıf kuru meyve ve sebzelerin küresel tedarikçisiyiz</p>
+         <button onclick="scrollWin(0,1050)">Detaylar <br> <i class="fa-solid fa-angle-down"></i></button>
       </div>
    </main>
 
    <section>
       <div class="content">
-         <div class="top-buttons">
+         <div class="top-buttons" id="en">
             <button class="export-btn">Export</button>
             <button class="import-btn">Import</button>
+         </div>
+         <div class="top-buttons" id="tr">
+            <button class="export-btn-tr">İthalat</button>
+            <button class="import-btn-tr">İhracat</button>
          </div>
          <div class="main-content">
             <p class="text"></p>
@@ -141,7 +156,7 @@
 
    </footer>
 
-   <script src="/javascripts/export.js"></script>
+   <script src="javascripts/export.js"></script>
    <script src="javascripts/language.js"></script>
    <script src="https://kit.fontawesome.com/6ca36d50dd.js" crossorigin="anonymous"></script>
 </body>

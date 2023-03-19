@@ -222,6 +222,22 @@ section{
             border-top-left-radius: 10px;
             border-bottom-left-radius: 30px;
          }
+         .import-btn-tr{
+            border-right: 1px solid $main-green;
+            border-left: none;
+            background: white;
+            color: $main-green;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 30px;
+         }
+         .export-btn-tr{
+            border-left: 1px solid $main-green;
+            border-right: none;
+            background: white;
+            color: $main-green;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 30px;
+         }
       }
 
       .main-content{
