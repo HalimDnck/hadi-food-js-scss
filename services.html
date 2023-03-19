@@ -38,7 +38,7 @@
 
       <div class="header-down">
          
-         <nav class="header-nav">
+         <nav class="header-nav" id="en">
             <ul class="header-links">
                <li><a href="index.html">Home</a></li>
                <li><a href="products.html">Products</a></li>
@@ -48,17 +48,33 @@
                <li><a href="contact.html">Contact</a></li>
             </ul>
          </nav>
+         <nav class="header-nav" id="tr">
+            <ul class="header-links">
+               <li><a href="index.html">Ana Sayfa</a></li>
+               <li><a href="products.html">Ürünler</a></li>
+               <li><a href="services.html">Servisler</a></li>
+               <li><a href="export.html">İthalat&İhracat</a></li>
+               <li><a href="about.html">Hakkımızda</a></li>
+               <li><a href="contact.html">İletişim</a></li>
+            </ul>
+         </nav>
       </div>
    </header>
    
 
    <main>
       <div class="service-head">
-         <div class="left-head head">
+         <div class="left-head head" id="en">
             <img src="/images/logo-white.png" alt="">
             <h1>Global Food Service Provider</h1>
             <p>We are dedicated to providing top-quality import and export services for food products, connecting you to a vast network of suppliers and buyers worldwide.</p>
             <button id="scrollBtn" onclick="scrollWin(0, 1050)">Get Started</button>
+         </div>
+         <div class="left-head head" id="tr">
+            <img src="/images/logo-white.png" alt="">
+            <h1>Uluslararası Gıda Tedariği</h1>
+            <p>Üstün hizmet kalitemiz ile Dünyanın bir çok noktasına ulaştırdığımız ürünlerimiz ile sizlere en uygun servis hizmetini sağlamayı hedeflemekteyiz.</p>
+            <button id="scrollBtn" onclick="scrollWin(0, 1050)">Başlayalım</button>
          </div>
          
          <div class="right-head head"></div>
@@ -67,7 +83,7 @@
 
       </div>
 
-      <div class="service-container">
+      <div class="service-container" id="en">
          <h2><strong>hadi</strong> <br> Global Food Import & Export Solutions</h2>
          <p>Welcome to <strong>hadi</strong> Global Food Import & Export Solutions, your one-stop destination for sourcing the finest cuisines from around the world. We are dedicated to providing top-quality import and export services for food products, connecting you to a vast network of suppliers and buyers worldwide.</p>
 
@@ -117,6 +133,50 @@
                
          </div>
       </div>
+      <div class="service-container" id="tr">
+         <h2><strong>hadi</strong> <br> Uluslararası Gıda İthalat ve İhracat Hizmetleri</h2>
+         <p>Dünyanın dört bir yanından en iyi mutfakları tedarik etmek için tek adresiniz <strong> hadi</strong> Global Food Import & Export Solutions'a hoş geldiniz. Sizi dünya çapında geniş bir tedarikçi ve alıcı ağına bağlayarak, gıda ürünleri için en yüksek kalitede ithalat ve ihracat hizmetleri sunmaya kendimizi adadık.</p>
+         <div class="services">
+            <div class="service">
+               <div class="cards">
+                  <h3>İthalat&İhracat</h3>
+                  <img src="/images/services/import.png" alt="">
+                  <p>Müşterilerinizin ihtiyaç duyduğu ürünleri dünya çapında tedarik ederek veya kendi ürünlerinizi küresel pazara tanıtmanıza yardımcı olarak ithalat ve ihracat hizmetleri sağlıyoruz</p>
+               </div>
+            </div>
+            <div class="service">
+               <div class="cards">
+                  <h3>Gümrük Hizmetler</h3>
+                  <img src="/images/services/customer.png" alt="">
+                  <p>Uzman ekibimiz, dünya çapındaki gümrük düzenlemeleri ve prosedürlerinden haberdar olarak işinizin sorunsuz bir şekilde yürümesini sağlamak için destek sağlar.</p>               </div>
+            </div>
+            <div class="service">
+               <div class="cards">
+                  <h3>Lojistik Hizmetleri</h3>
+                  <img src="/images/services/logistics.png" alt="">
+                  <p>İster deniz, ister hava veya kara yoluyla olsun, küresel taşımacılık ihtiyaçlarınız için lojistik çözümler sunuyoruz</p>               </div>
+            </div>
+            <div class="service">
+               <div class="cards">
+                  <h3>Özel Proje Taşımacılığı</h3>
+                  <img src="/images/services/start-up.png" alt="">
+                  <p>Özel projeler için özel nakliye çözümleri sunuyoruz. Ekibimiz, özel ihtiyaçlarınıza göre özel ulaşım planları oluşturabilir</p>               </div>
+            </div>
+            <div class="service">
+               <div class="cards">
+                  <h3>Depolama ve Dağıtım Hizmetleri</h3>
+                  <img src="/images/services/boxes.png" alt="">
+                  <p>Ürünlerinizin özel ihtiyaçlarına göre paketlenmelerini, depolanmalarını ve dünya genelinde müşterilerinize teslim edilmelerini sağlayarak ürünleriniz için depolama ve dağıtım hizmetleri sağlıyoruz</p>               </div>
+            </div>
+            <div class="service">
+               <div class="cards">
+                  <h3>Küresel Pazarlama Hizmetleri</h3>
+                  <img src="/images/services/global-market.png" alt="">
+                  <p>Uzman ekibimiz, işletmeniz için küresel ölçekte pazarlama desteği sağlar. Sektör raporları, ürün pazarlama stratejileri ve hedef pazarlar konusunda bilgi sahibiyiz.</p>               </div>
+            </div>
+               
+         </div>
+      </div>
 
 
    </main>
@@ -143,13 +203,22 @@
          </div>
 
          <div class="mid-footer">
-            <ul class="footer-links">
-               <li><a href="">Home</a></li>
-               <li><a href="">Products</a></li>
-               <li><a href="">Services</a></li>
-               <li><a href="">Import&Export</a></li>
-               <li><a href="">About</a></li>
-               <li><a href="">Contact</a></li>
+            <ul class="footer-links" id="en">
+               <li><a href="index.html">Ana Sayfa</a></li>
+               <li><a href="products.html">Ürünler</a></li>
+               <li><a href="services.html">Servisler</a></li>
+               <li><a href="export.html">İthalat&İhracat</a></li>
+               <li><a href="about.html">Hakkımızda</a></li>
+               <li><a href="contact.html">İletişim</a></li>
+            </ul>
+
+            <ul class="footer-links" id="tr">
+               <li><a href="index.html">Ana Sayfa</a></li>
+               <li><a href="products.html">Ürünler</a></li>
+               <li><a href="services.html">Servisler</a></li>
+               <li><a href="export.html">İthalat&İhracat</a></li>
+               <li><a href="about.html">Hakkımızda</a></li>
+               <li><a href="contact.html">İletişim</a></li>
             </ul>
          </div>
          
@@ -159,7 +228,8 @@
             <a href="https://goo.gl/maps/XfgTGztHStqsjPdTA" class="address"><i class="fa-solid fa-location-dot"></i> Bahçelievler Mahallesi 123. Sokak No: 5/8 Şehitkamil/GAZİANTEP</a>
 
             <div class="email-button">
-               <input type="mail" id="enter" placeholder=" Get Price - Leave Your Email">
+               <input type="mail" id="en" placeholder=" Get Price - Leave Your Email">
+               <input type="mail" id="tr" placeholder=" Fiyat Bilgisi - Mail Yazınız">
                <button type="submit" id="submit"><i class="fa-sharp fa-solid fa-paper-plane"></i></button>
            </div>
          </div>
@@ -168,12 +238,14 @@
 
       <div class="bottom-footer">
          <p>Created by <a href="https://github.com/HalimDnck">Halim Dinckalmis</a></p>  
-         <a href="" style="text-decoration: none;">Terms of Services</a>
+         <a href="" style="text-decoration: none;" id="en">Terms of Services</a>
+         <a href="" style="text-decoration: none;" id="tr">Hizmet Şartları</a>
       </div>   
 
    </footer>
 
    <script src="/javascripts/side-pages.js"></script>
+   <script src="javascripts/language.js"></script>
    <script src="https://kit.fontawesome.com/6ca36d50dd.js" crossorigin="anonymous"></script>
 </body>
 </html>

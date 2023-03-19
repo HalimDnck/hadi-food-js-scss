@@ -686,6 +686,7 @@ footer hr {
   opacity: 0.4;
 }
 footer .bottom-footer {
+  width: 100%;
   padding: 0 15px;
   height: 30px;
   font-size: 16px;
