@@ -1,4 +1,4 @@
-/*Products*/
+/*Products*//*
 const fruitButton = document.getElementById('fruit-button');
 const vegiButton = document.getElementById('vegi-button');
 const healtButton = document.getElementById('healt-button');
