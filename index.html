@@ -40,7 +40,7 @@
 
       <div class="header-down">
          
-         <nav class="header-nav">
+         <nav class="header-nav" id="en">
             <ul class="header-links">
                <li><a href="index.html">Home</a></li>
                <li><a href="products.html">Products</a></li>
@@ -50,11 +50,21 @@
                <li><a href="contact.html">Contact</a></li>
             </ul>
          </nav>
+         <nav class="header-nav" id="tr">
+            <ul class="header-links">
+               <li><a href="index.html">Ana Sayfa</a></li>
+               <li><a href="products.html">Ürünler</a></li>
+               <li><a href="services.html">Servisler</a></li>
+               <li><a href="export.html">İthalat&İhracat</a></li>
+               <li><a href="about.html">Hakkımızda</a></li>
+               <li><a href="contact.html">İletişim</a></li>
+            </ul>
+         </nav>
       </div>
    </header>
 
    <main>
-      <div class="left-main">
+      <div class="left-main" id="en">
          <div class="main-text">
             <h1>The Taste Came From <strong>Nature</strong></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est recusandae dignissimos fugiat alias culpa repellendus, consequuntur veniam tenetur in commodi.</p>
@@ -62,6 +72,16 @@
          <div class="main-buttons">
             <button class="products">PRODUCTS</button>
             <button class="services">SERVICES</button>
+         </div>
+      </div>
+      <div class="left-main" id="tr">
+         <div class="main-text">
+            <h1><strong>Doğadan</strong> gelen lezzet</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est recusandae dignissimos fugiat alias culpa repellendus, consequuntur veniam tenetur in commodi.</p>
+         </div>
+         <div class="main-buttons">
+            <button class="products">ÜRÜNLER</button>
+            <button class="services">SERVİSLER</button>
          </div>
       </div>
 
@@ -72,7 +92,8 @@
       
       <div class="top-service">
          <div class="top-srv srv1">
-            <h3 >INTRODUCTION</h3>
+            <h3 id="en">INTRODUCTION</h3>
+            <h3 id="tr">ÜRETİM</h3>
             <div class="service-button">
                <button class="inside"></button>
                <button class="outside"></button>
@@ -81,7 +102,8 @@
          </div>
          <img src="images/features.png" alt="product" class="img-1">
          <div class="top-srv srv2">
-            <h3>PRODUCTS</h3>
+            <h3 id="en">PRODUCTS</h3>
+            <h3 id="tr">ÜRÜN</h3>
             <div class="service-button">
                <button class="inside"></button>
                <button class="outside"></button>
@@ -90,7 +112,8 @@
          </div>
          <img src="images/shipped.png" alt="transportation" class="img-2">
          <div class="top-srv srv3">
-            <h3>LOGISTIC</h3>
+            <h3 id="en">LOGISTIC</h3>
+            <h3 id="tr">LOJİSTİK</h3>
             <div class="service-button">
                <button class="inside"></button>
                <button class="outside"></button>
@@ -113,7 +136,7 @@
 
    </section>
 
-   <section class="half-section-a">
+   <section class="half-section-a" id="en">
       <div class="info">
          <p>48</p>
          <p>Locations</p>
@@ -133,35 +156,69 @@
          <p>Years Service</p>
       </div>
    </section>
+   <section class="half-section-a" id="tr">
+      <div class="info">
+         <p>48</p>
+         <p>Lokasyon</p>
+      </div>
+      <div class="info">
+         <p>287</p>
+         <p>Teslimat</p>
+         <p class="alt-text">(haftalık)</p>
+      </div>
+      <div class="info">
+         <p>1653kg</p>
+         <p>Üretim</p>
+         <p class="alt-text">(yıllık)</p>
+      </div>
+      <div class="info-last">
+         <p>23</p>
+         <p>Yıl Hizmet</p>
+      </div>
+   </section>
 
    <section class="section-b Products">
       <div class="product-header">
          <hr>
-         <h3 class="srv-header">MAIN PRODUCTS</h3>
+         <h3 class="srv-header" id="en">MAIN PRODUCTS</h3>
+         <h3 class="srv-header" id="tr">ÇOK SATANLAR</h3>
          <hr>
       </div>
 
       <div class="product-text">
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates exercitationem modi minus fuga perferendis eveniet voluptatem sunt alias odio repellat officia, asperiores sed porro tenetur odit id amet et voluptate.</p>
+         <p id="en">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates exercitationem modi minus fuga perferendis eveniet voluptatem sunt alias odio repellat officia, asperiores sed porro tenetur odit id amet et voluptate.</p>
+         <p id="tr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates exercitationem modi minus fuga perferendis eveniet voluptatem sunt alias odio repellat officia, asperiores sed porro tenetur odit id amet et voluptate.</p>
       </div>
 
       <div class="product-container">
          <div class="product" id="fruit" style="background-image: url('/images/products/product-1.png')">
-            <div class="product-name">
+            <div class="product-name" id="en">
                <h4>Dry Apricot&Coffee</h4>
                <a href="">DETAILS</a>
             </div>
+            <div class="product-name" id="tr">
+               <h4>Kuru Kayısı&Kahve</h4>
+               <a href="">DETAYLAR</a>
+            </div>
          </div>
          <div class="product " id="vegi" style="background-image: url('/images/products/product-6.png')">
-            <div class="product-name">
+            <div class="product-name" id="en">
                <h4>Dry Tomato</h4>
                <a href="">DETAILS</a>
             </div>
+            <div class="product-name" id="tr">
+               <h4>Domates Kurusu</h4>
+               <a href="">DETAYLAR</a>
+            </div>
          </div>
          <div class="product " id="fruit" style="background-image: url('/images/products/product-3.png')">
-            <div class="product-name">
+            <div class="product-name" id="en">
                <h4>Fruit Mix</h4>
                <a href="">DETAILS</a>
+            </div>
+            <div class="product-name" id="tr">
+               <h4>Meyve Karışımı</h4>
+               <a href="">DETAYLAR</a>
             </div>
          </div>
       </div>
@@ -172,7 +229,8 @@
 
       <div class="offer-top">
          <hr>
-         <h3 class="offer-header">WHAT WE OFFER</h3>
+         <h3 class="offer-header" id="en">WHAT WE OFFER</h3>
+         <h3 class="offer-header" id="tr">SUNDUĞUMUZ SERVİSLER</h3>
          <hr>
       </div>
 
