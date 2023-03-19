@@ -159,7 +159,7 @@ main{
          color: white;
       }
       P{
-         font-size: 48px;
+         font-size: 24px;
          color: white;
          font-weight: 100;
       }
@@ -190,6 +190,7 @@ section{
    .content{
       width: 100%;
       height: 100%;
+      text-align: left;
 
       .top-buttons{
          display: flex;
@@ -209,17 +210,46 @@ section{
             border-right: 1px solid $main-green;
             border-left: none;
             background: white;
-            color: black;
+            color: $main-green;
             border-bottom-right-radius: 10px;
             border-top-right-radius: 30px;
          }
          .export-btn{
             border-left: 1px solid $main-green;
             border-right: none;
-            background: $main-green;
-            color: white;
+            background: white;
+            color: $main-green;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 30px;
+         }
+      }
+
+      .main-content{
+         @include flexBox;
+         p{
+            padding: 150px 15%;
+            font-size: 22px;
+            font-weight: 300;
+            strong{
+               font-family: logoFont;
+               color: $main-green;
+            }
+
+         }
+         .map{
+            width: 30%;
+         }
+         .globe{
+            width: 800px;
+            position: absolute;
+            opacity: .2;
+            margin-left: 20%;
+         }
+         .arrow{
+            width: 800px;
+            position: absolute;
+            opacity: .1;
+            margin-left: 20%;
          }
       }
    }
