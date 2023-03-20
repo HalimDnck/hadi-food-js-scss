@@ -1,9 +1,11 @@
-/*Products*//*
+/*Products*/
 const fruitButton = document.getElementById('fruit-button');
 const vegiButton = document.getElementById('vegi-button');
 const healtButton = document.getElementById('healt-button');
 const drinkButton = document.getElementById('drink-button');
 const allButton = document.getElementById('all-button');
+
+
 
 const fruits = document.querySelectorAll('#fruit');
 const vegis = document.querySelectorAll('#vegi');
@@ -90,6 +92,4 @@ allButton.addEventListener('click', function(){
 function scrollWin(x, y) {
    window.scrollBy(x, y);
 }
-
-
 

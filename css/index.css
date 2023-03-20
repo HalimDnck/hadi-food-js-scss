@@ -715,4 +715,16 @@ footer .bottom-footer {
 }
 footer .bottom-footer a {
   color: white;
+}
+
+@media (max-width: 1440px) {
+  .section-b {
+    padding: 100px 50px;
+  }
+  .section-c {
+    padding: 100px 50px;
+  }
+  .section-d {
+    padding: 100px 50px;
+  }
 }/*# sourceMappingURL=index.css.map */
